@@ -16,7 +16,7 @@ const Info = () => {
         {/* <SelectPlan /> */}
         {/* <PersonalInfo /> */}
         {/* <AddOns /> */}
-        <Finishing />
+        {/* <Finishing /> */}
       </div>
     </>
   );

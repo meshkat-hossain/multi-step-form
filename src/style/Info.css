@@ -45,6 +45,10 @@ width: 70%;
   border: 1px solid white;
   border-radius: 50%;
 }
+.checkbox button:active{
+  background-color: #f2f3f5;
+  color: #000;
+}
 .text-label label{
   color: rgb(212, 209, 209);
 }
@@ -261,5 +265,5 @@ color: #9a9b9c;
 background:#483EFF;
 }
 .confirmbtn button:hover{
-  background: #000;
+  background: (#000);
 }
