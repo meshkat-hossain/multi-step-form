@@ -1,8 +1,265 @@
 .containers {
+  display: flex;
   height: 70vh;
   border-radius: 5px;
   background-color: white;
   box-shadow: 4px 10px 5px 0px rgba(128, 119, 119, 0.34);
   -webkit-box-shadow: 4px 10px 5px 0px rgba(128, 119, 119, 0.34);
   -moz-box-shadow: 4px 10px 5px 0px rgba(128, 119, 119, 0.34);
+}
+.leftSideBar {
+  height: 90%;
+  width: 40%;
+  border-radius: 5px;
+  margin: auto;
+  display: flex;
+}
+.left {
+  background-image: url("../images/bg-sidebar-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+
+  width: 100%;
+  background-size: contain;
+  position: relative;
+}
+.contain {
+  position: absolute;
+  margin: 20px;
+}
+.label{
+  display: flex;
+  margin: 27px;
+width: 70%;
+
+}
+.checkbox{
+  margin-right: 20px;
+  margin-top: 8px;
+}
+.checkbox button{
+  width: 35px;
+  color: white;
+  background: #483EFF;
+  height: 35px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.text-label label{
+  color: rgb(212, 209, 209);
+}
+.text-label p{
+  color: rgb(216, 216, 216);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.infoSide {
+  width: 50%;
+  margin: auto;
+  height: 90%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.section1{
+height: 20%;
+}
+.section1 h2{
+  color: #0b2b58;
+  font-weight: 600;
+}
+.section1 p{
+  color: #9a9b9c;
+  font-weight: 550;
+}
+.section2{
+height: 40%;
+display: flex;
+justify-content: space-between;
+margin-bottom: 20px;
+
+}
+
+.card1,.card2,.card3{
+  border: 1px solid #d3d5d6;
+width: 31%;
+border-radius: 10px;
+padding: 15px;
+}
+
+.card1{
+  border: 1px inset rgb(209, 28, 209);
+}
+.card1:hover ,.card2:hover,.card3:hover{
+  border: 1px inset rgb(209, 28, 209);
+}
+.card1, .card2, .card3 h5{
+  color: #0b2b58;
+}
+.card1 p, .card2 p, .card3 p {
+  color: rgb(88, 87, 87);
+}
+.logo{
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.section3{
+display: flex;
+border-radius: 5px;
+height: 5.5%;
+width: 70%;
+background-color: #eaeaf1;
+margin: 0 auto;
+justify-content: center;
+margin-top: 30px;
+margin-bottom: 30px;
+}
+.section3 p{
+  margin-right: 30px;
+  margin-left: 30px;
+  color: #0b2b58;
+}
+.section4{
+  height: 30%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.btn1 button , .btn2 button{
+  border-radius: 5px;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid whitesmoke;
+
+}
+.btn1 button{
+  color: #9a9b9c;
+
+}
+.btn1 button:hover{
+border: 1px inset rgb(209, 28, 209) ;
+color: #0b2b58;
+font-weight: bold;
+}
+.btn2 button{
+  background:  #0b2b58;
+  color: white;
+  font-weight: bold;
+}
+.btn2 button:hover{
+  background: #483EFF
+}
+.formList{
+  width: 80%;
+}
+.personalInfoBtn2{
+  width: 80%;
+  display: flex;
+  justify-content: end;
+  margin-top: 70px;
+}
+.personalInfosection{
+  width: 80%;
+}
+/* //add ons */
+.adds{
+  border: 1px inset rgb(28, 137, 209) ;
+  border-radius: 10px;
+  width: 90%;
+  height: 100px;
+  align-items: center;
+  padding: 30px;
+}
+
+.check input{
+  margin-top: 15px;
+
+  font-size: 25px;
+}
+.check p{
+  color: #0b2b58;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.check span{
+  
+  color: #9a9b9c;
+}
+.rate p{
+  color: #2d23da;
+  font-size: 16px;
+}
+.pickaddbtn{
+  width: 90%;
+  margin-top: -20px;
+}
+/* finishingPlan */
+.finishingPlan{
+  width: 90%;
+  background-color: #f2f3f5;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+}
+
+.line1{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  border-bottom: 2px solid silver;
+}
+.plan{
+  margin-bottom: 15px;
+}
+.plan p{
+  color: #0b2b58;
+  font-weight: bold;
+}
+.plan span{
+  border-bottom: 1px solid ;
+font-size: 15px;
+font-weight: 600;
+color: #9a9b9c;
+}
+.prices p{
+  color: #0b2b58;
+  font-weight: bold;
+}
+.onlineService{
+  display: flex;
+  justify-content: space-between;
+}
+.onlineService p{
+  color: #9a9b9c;
+}
+.onlineService span{
+  color: #0b2b58;
+  font-weight: 600;
+}
+.total{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.total p{
+  color: #9a9b9c;
+    
+}
+.total span{
+  font-size: 19px;
+  font-weight: bold;
+  color:#483EFF;
+}
+.finishingbtn{
+  width: 90%;
+}
+.confirmbtn button{
+background:#483EFF;
+}
+.confirmbtn button:hover{
+  background: #000;
 }
