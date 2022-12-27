@@ -1,5 +1,6 @@
 import React from "react";
 
+import { NavLink } from "react-router-dom";
 
 const PersonalInfo = () => {
   return (
@@ -21,7 +22,7 @@ const PersonalInfo = () => {
               />
             </div>
             <div className="form-group mb-4">
-              <label  for="formGroupExampleInput2 ">Email address</label>
+              <label for="formGroupExampleInput2 ">Email address</label>
               <input
                 type="text"
                 className="form-control mt-2"
@@ -40,9 +41,11 @@ const PersonalInfo = () => {
             </div>
           </form>
         </div>
-         <div className="btn2 personalInfoBtn2">
+        <div className="btn2 personalInfoBtn2">
+          <NavLink to="/selectPlan">
             <button>Next Step</button>
-          </div>
+          </NavLink>
+        </div>
       </div>
     </>
   );

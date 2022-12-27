@@ -1,5 +1,5 @@
 import React from "react";
-
+import { NavLink } from "react-router-dom";
 const AddOns = () => {
   return (
     <>
@@ -18,8 +18,8 @@ const AddOns = () => {
                 value="option1"
                 aria-label="..."
               />
-            <p>Online Service</p>
-            <span>Access to multiplayer games</span>
+              <p>Online Service</p>
+              <span>Access to multiplayer games</span>
             </div>
           </div>
           <div className="rate">
@@ -37,8 +37,8 @@ const AddOns = () => {
                 value="option1"
                 aria-label="..."
               />
-            <p>Larger Storege</p>
-            <span>Extra 1TB of cloud save</span>
+              <p>Larger Storege</p>
+              <span>Extra 1TB of cloud save</span>
             </div>
           </div>
           <div className="rate">
@@ -55,8 +55,8 @@ const AddOns = () => {
                 value="option1"
                 aria-label="..."
               />
-            <p>Customizable profile</p>
-            <span>Custom theme on your profile</span>
+              <p>Customizable profile</p>
+              <span>Custom theme on your profile</span>
             </div>
           </div>
           <div className="rate">
@@ -65,10 +65,15 @@ const AddOns = () => {
         </div>
         <div className="section4 pickaddbtn">
           <div className="btn1">
-            <button>Go Back</button>
+            <NavLink to="/selectPlan">
+              <button>Go Back</button>
+            </NavLink>
           </div>
           <div className="btn2">
+            <NavLink to="/finishing">
+
             <button>Next Step</button>
+            </NavLink>
           </div>
         </div>
       </div>

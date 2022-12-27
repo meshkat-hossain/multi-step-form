@@ -6,6 +6,7 @@ import SelectPlan from "./component/SelectPlan";
 import PersonalInfo from "./component/PersonalInfo";
 import AddOns from "./component/AddOns";
 import Finishing from "./component/Finishing";
+import Thanks from "./pages/Thanks";
 
 const App = () => {
   return (
@@ -16,11 +17,12 @@ const App = () => {
         <Sidebar />
      
         <Routes>
-          <Route path="/personalinfo" element={<PersonalInfo />} />
+          <Route path="/" element={<PersonalInfo />} />
           <Route path="/selectPlan" element={<SelectPlan /> } />
           <Route path="/add" element={<AddOns />} />
           <Route path="/finishing" element={<Finishing />} />
-        </Routes>
+          <Route path="/thanks" element={<Thanks />}/>
+         </Routes>
       </div>
       </Router>
 

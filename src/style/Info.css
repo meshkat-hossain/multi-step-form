@@ -45,7 +45,7 @@ width: 70%;
   border: 1px solid white;
   border-radius: 50%;
 }
-.checkbox button:active{
+.checkbox button:hover{
   background-color: #f2f3f5;
   color: #000;
 }
@@ -85,6 +85,7 @@ margin-bottom: 20px;
 }
 
 .card1,.card2,.card3{
+  text-align: center;
   border: 1px solid #d3d5d6;
 width: 31%;
 border-radius: 10px;
@@ -160,7 +161,7 @@ font-weight: bold;
   width: 80%;
   display: flex;
   justify-content: end;
-  margin-top: 70px;
+  margin-top: 10px;
 }
 .personalInfosection{
   width: 80%;
@@ -266,4 +267,21 @@ background:#483EFF;
 }
 .confirmbtn button:hover{
   background: (#000);
+}
+/* thanksSection */
+.thanksSection{
+display: flex;
+flex-direction: column;
+justify-content: center;
+  text-align: center;
+
+}
+.thanks p{
+  font-weight: bolder;
+  font-size: 35px;
+  color:#0b2b58
+}
+.text p{
+  color: #9a9b9c;
+  font-size: 18px;
 }

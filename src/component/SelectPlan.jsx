@@ -3,6 +3,7 @@ import Form from "react-bootstrap/Form";
 import arcade from "../images/icon-arcade.svg";
 import advanced from "../images/icon-advanced.svg";
 import pro from "../images/icon-pro.svg";
+import { Link, NavLink } from "react-router-dom";
 
 const InfoSide = () => {
   return (
@@ -25,14 +26,14 @@ const InfoSide = () => {
               <img src={advanced} />
             </div>
             <h5>Advanced</h5>
-            <p>$9/mo</p>
+            <p>$19/mo</p>
           </div>
           <div className="card3">
             <div className="logo">
               <img src={pro} />
             </div>
             <h5>Pro</h5>
-            <p>$9/mo</p>
+            <p>$29/mo</p>
           </div>
         </div>
         <div className="section3">
@@ -44,10 +45,14 @@ const InfoSide = () => {
         </div>
         <div className="section4">
           <div className="btn1">
-            <button>Go Back</button>
+            <NavLink to="/">
+              <button>Go Back</button>
+            </NavLink>
           </div>
           <div className="btn2 ">
-            <button>Next Step</button>
+            <NavLink to="/add">
+              <button>Next Step</button>
+            </NavLink>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Finishing = () => {
   return (
@@ -37,10 +38,16 @@ const Finishing = () => {
 
           <div className="section4 finishingbtn">
           <div className="btn1">
+            <NavLink to="/add">
+
             <button>Go Back</button>
+            </NavLink>
           </div>
           <div className="btn2 confirmbtn">
+            <NavLink to="/thanks">
+
             <button>Confirm</button>
+            </NavLink>
           </div>
         </div>
       </div>
